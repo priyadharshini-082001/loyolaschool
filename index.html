@@ -210,10 +210,16 @@
                                     </li>
                                             
 
-<li class="main-nav has-menu-child-item project-a-after">
-                                        <a href="#">Contact</a>
-                                      
+    <li class="main-nav has-dropdown has-menu-child-item project-a-after">
+                                        <a href="#">Admission</a>
+                                        <ul class="submenu parent-nav">
+                                            <li><a href="shop-sidebar-left.html">Admission Procedure</a>
+                                            </li>
+                                            <li><a href="shop-details.html">Admission Form</a>
+                                            </li>
+                                        </ul>
                                     </li>
+
                                             
 
                                 </ul>
@@ -248,58 +254,153 @@
 
 
 
-    <section class="hero-slider" >
+   
 
-<div class="slide active">
-    <img src="assets/images/imgloyola/banner/hero1.png" alt="">
+
+<div id="rs-slider" class="rs-slider slider6">
+      <div class="slideshow-container">
+
+<div class="mySlides fade">
+
+    <img src="assets/images/imgloyola/banner/banner1.webp" style="width:100%">
+
 </div>
 
-<div class="slide">
-    <img src="assets/images/imgloyola/banner/hero2.png" alt="">
+<div class="mySlides fade">
+
+    <img src="assets/images/imgloyola/banner/banner2.png" style="width:100%">
+
 </div>
 
-<div class="slide">
-    <img src="assets/images/imgloyola/banner/hero3.png" alt="">
+<div class="mySlides fade">
+
+    <img src="assets/images/imgloyola/banner/mainbanner.png" style="width:100%">
+
 </div>
 
-    <!-- Controls -->
-<button class="slider-btn prev" aria-label="Previous Slide">
-    &#10094;
-</button>
-
-<button class="slider-btn next" aria-label="Next Slide">
-    &#10095;
-</button>
-
-</section>
 
 
 
-        <script>
-let slides = document.querySelectorAll(".slide");
-let index = 0;
+</div>
 
-function showSlide(i) {
-  slides.forEach(slide => slide.classList.remove("active"));
-  slides[i].classList.add("active");
+
+
+
+<div style="text-align:center;margin-top: -2%;">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+
+
+            </div>
+
+
+
+
+<style>
+/* Slideshow container */
+.slideshow-container {
+    max-width: auto;
+    position: relative;
+    margin: auto;
 }
 
-function nextSlide() {
-  index = (index + 1) % slides.length;
-  showSlide(index);
+/* Caption text */
+
+/* Number text (1/3 etc) */
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.slider-dots,
+.dot,
+div[style*="text-align:center"]{
+    display: none !important;
 }
 
-function prevSlide() {
-  index = (index - 1 + slides.length) % slides.length;
-  showSlide(index);
+.active {
+    background-color: #fff;
 }
 
-document.querySelector(".next").onclick = nextSlide;
-document.querySelector(".prev").onclick = prevSlide;
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 
-// Auto slide
-setInterval(nextSlide, 4000);
+.fade:not(.show) {
+    opacity: 1;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+@media only screen and (max-width: 600px) {
+    .testiItem02 .quotation {
+display: none !important;
+}
+}
+
+
+/* On smaller screens, decrease text size */
+</style>
+
+
+
+    <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
 </script>
+
+
+<div class="notice-bar">
+    <div class="notice-label">
+        📢 Latest Updates
+    </div>
+
+    <div class="notice-wrapper">
+        <div class="notice-track">
+            <span>
+ 🏆 Excellence in Academics  🌱 Value-Based Education  👩‍🏫 Highly Qualified Faculty  💻 Digital Learning  ⚽ Sports & Cultural Activities  🎓 Empowering Minds, Inspiring Futures
+            </span>
+
+        </div>
+    </div>
+</div>
 
  <!-- About Area Start -->
     <section class="tmp-about-area4 " style="background-color: #ffffff;padding: 50px 0px;">
@@ -387,92 +488,134 @@ critical thinking, holistic development, and empowering every student to become 
            
     </section>
     <!-- About Area End -->
+<!-- Academic Levels -->
+<section class="academic-section">
+    <div class="container-fluid px-lg-5 px-3">
 
-  <!-- Working Process Area Start -->
-<section class="tmp-working-process-area tmp-section-gap" style="background-color:#ffffff;">
-    <div class="container-3">
-        <div class="section-title-area-3">
-            <p class="sub-title cg" data-sal="slide-up-large" data-sal-duration="800" data-sal-delay="200">
+        <div class="section-title-area-3 text-center mb-5">
+            <p class="sub-title cg">
                 ACADEMICS
             </p>
-            <h2 class="section-title" data-sal="slide-up-large" data-sal-duration="800" data-sal-delay="200">
-                Academic Levels
+
+            <h2 class="section-title">
+                Learning Journey
             </h2>
+
+            <p class="academic-subtitle">
+                Every stage is thoughtfully designed to inspire curiosity,
+                build confidence, and prepare students for lifelong success.
+            </p>
         </div>
 
-        <div class="section-inner mt--60">
-            <div class="row g-5">
+        <div class="row g-4 justify-content-center">
 
-                <!-- Primary -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12"
-                    data-sal="slide-right"
-                    data-sal-duration="800"
-                    data-sal-delay="200">
+            <!-- Primary -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
 
-                    <div class="working-process-wrapper6">
-                        <div class="content text-center">
-                            <p class="number">01</p>
-                            <h3 class="title">
-                                <a href="#">Primary School</a>
-                            </h3>
-                            <p class="desc">
-                                Building strong foundations through engaging learning experiences, activity-based education, and the development of essential literacy, numeracy, and life skills.
-                            </p>
-                        </div>
+                <div class="academic-card">
+
+                    <div class="academic-image">
+
+                        <span class="academic-tag">
+                            Grades I – V
+                        </span>
+
+                        <img src="assets/images/imgloyola/infra/primary.png" alt="Primary School">
+
                     </div>
-                </div>
 
-                <!-- Middle -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12"
-                    data-sal="slide-right"
-                    data-sal-duration="800"
-                    data-sal-delay="500">
+                    <div class="academic-content">
 
-                    <div class="working-process-wrapper6 cp-none">
-                        <div class="content text-center">
-                            <p class="number">02</p>
-                            <h3 class="title">
-                                <a href="#">Middle School</a>
-                            </h3>
-                            <p class="desc">
-                                Encouraging critical thinking, creativity, and academic excellence through a balanced curriculum, practical learning, and co-curricular activities.
-                            </p>
-                        </div>
+                        <h3>Primary School</h3>
+
+                       <p style="text-align: justify;color: #000000;">
+                            A joyful learning environment where young minds
+                            develop strong academic foundations through
+                            interactive classrooms, creativity, and
+                            hands-on experiences.
+                        </p>
+
                     </div>
-                </div>
 
-                <!-- Senior Secondary -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12"
-                    data-sal="slide-right"
-                    data-sal-duration="800"
-                    data-sal-delay="800">
-
-                    <div class="working-process-wrapper6 cp-none">
-                        <div class="content text-center">
-                            <p class="number">03</p>
-                            <h3 class="title">
-                                <a href="#">Senior Secondary</a>
-                            </h3>
-                            <p class="desc">
-                                Preparing students for higher education and future careers through advanced academics, leadership opportunities, career guidance, and holistic development.
-                            </p>
-                        </div>
-                    </div>
                 </div>
 
             </div>
+
+            <!-- Middle -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
+
+                <div class="academic-card">
+
+                    <div class="academic-image">
+
+                        <span class="academic-tag">
+                            Grades VI – VIII
+                        </span>
+
+                        <img src="assets/images/imgloyola/infra/mid.jpeg" alt="Middle School">
+
+                    </div>
+
+                    <div class="academic-content">
+
+                        <h3>Middle School</h3>
+
+                    <p style="text-align: justify;color: #000000;">
+                            Empowering learners with analytical thinking,
+                            innovation, collaboration, and a balanced
+                            curriculum that nurtures both knowledge
+                            and character.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Secondary -->
+            <div class="col-xl-4 col-lg-4 col-md-6">
+
+                <div class="academic-card">
+
+                    <div class="academic-image">
+
+                        <span class="academic-tag">
+                            Grades IX – XII
+                        </span>
+
+                        <img src="assets/images/imgloyola/labclass/classroom.jpeg" alt="Senior Secondary">
+
+                    </div>
+
+                    <div class="academic-content">
+
+                        <h3>Senior Secondary</h3>
+                        
+     <p style="text-align: justify;color: #000000;">
+                            Preparing future leaders through academic excellence,
+                            career-focused guidance, leadership opportunities,
+                            and holistic personal development.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
     </div>
 </section>
-<!-- Working Process Area End -->
-
-
-<!-- Modern Facilities Section Start -->
-<section class="school-gallery-area tmp-section-gapBottom" style="background:#ebf3ff; padding:30px 0;">
+<!-- =========================
+     Modern Facilities
+========================= -->
+<section class="school-gallery-area tmp-section-gapBottom" style="background:#ebf3ff;padding:60px 0;">
 
     <div class="container">
 
-        <div class="section-title-area-3 text-center">
+        <div class="section-title-area-3 text-center mb-5">
             <p class="sub-title cg">
                 OUR <span class="subtitle-bg">FACILITIES</span>
             </p>
@@ -482,95 +625,126 @@ critical thinking, holistic development, and empowering every student to become 
             </h2>
         </div>
 
-        <div class="project-slider-area mt-5">
+        <div class="swiper tmp-slider-active-project-2">
 
-            <div class="swiper tmp-slider-active-project-2">
+            <div class="swiper-wrapper">
 
-                <div class="swiper-wrapper">
+                <!-- Biology -->
+                <div class="swiper-slide">
+                    <div class="gallery-card">
 
-                    <!-- Biology Lab -->
-                    <div class="swiper-slide">
-                        <div class="gallery-card">
-                            <img src="assets/images/imgloyola/labclass/biologylab.jpeg" alt="Biology Lab">
-                            <div class="gallery-overlay">
+                        <span class="facility-tag">LAB</span>
 
-                                <h3>Biology Laboratory</h3>
-                            </div>
+                        <img src="assets/images/imgloyola/labclass/biologylab.jpeg" alt="">
+
+                        <div class="gallery-overlay">
+                            <h3>Biology Laboratory</h3>
                         </div>
-                    </div>
 
-                    <!-- Computer Lab -->
-                    <div class="swiper-slide">
-                        <div class="gallery-card">
-                            <img src="assets/images/imgloyola/labclass/computerlab.jpeg" alt="Computer Lab">
-                            <div class="gallery-overlay">
-     
-                                <h3>Computer Laboratory</h3>
-                            </div>
-                        </div>
                     </div>
-
-                    <!-- Physics Lab -->
-                    <div class="swiper-slide">
-                        <div class="gallery-card">
-                            <img src="assets/images/imgloyola/labclass/physicslab.jpeg" alt="Physics Lab">
-                            <div class="gallery-overlay">
-                                <h3>Physics Laboratory</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Library -->
-                    <div class="swiper-slide">
-                        <div class="gallery-card">
-                            <img src="assets/images/imgloyola/labclass/library2.jpeg" alt="Library">
-                            <div class="gallery-overlay">
-                                <h3>Well-Stocked Library</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Smart Classroom -->
-                    <div class="swiper-slide">
-                        <div class="gallery-card">
-                            <img src="assets/images/imgloyola/labclass/classroom.jpeg" alt="Smart Classroom">
-                            <div class="gallery-overlay">
-                                <h3>Smart Classrooms</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Playground -->
-                    <div class="swiper-slide">
-                        <div class="gallery-card">
-                            <img src="assets/images/imgloyola/labclass/playground.jpeg" alt="Playground">
-                            <div class="gallery-overlay">
-                                <h3>Spacious Playground</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- School Transport -->
-                    <div class="swiper-slide">
-                        <div class="gallery-card">
-                            <img src="assets/images/imgloyola/labclass/bus.jpeg" alt="School Transport">
-                            <div class="gallery-overlay">
-                                <h3>Safe School Transport</h3>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                <!-- Navigation -->
-                <div class="slider-button">
-                    <div class="swiper-btn swiper-button-prev">
-                        <i class="fal fa-arrow-left"></i>
-                    </div>
+                <!-- Computer -->
+                <div class="swiper-slide">
+                    <div class="gallery-card">
 
-                    <div class="swiper-btn swiper-button-next">
-                        <i class="fal fa-arrow-right"></i>
+                        <span class="facility-tag">COMPUTER</span>
+
+                        <img src="assets/images/imgloyola/labclass/computerlab.jpeg" alt="">
+
+                        <div class="gallery-overlay">
+                            <h3>Computer Laboratory</h3>
+                        </div>
+
                     </div>
+                </div>
+
+                <!-- Physics -->
+                <div class="swiper-slide">
+                    <div class="gallery-card">
+
+                        <span class="facility-tag">LAB</span>
+
+                        <img src="assets/images/imgloyola/labclass/physicslab.jpeg" alt="">
+
+                        <div class="gallery-overlay">
+                            <h3>Physics Laboratory</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Library -->
+                <div class="swiper-slide">
+                    <div class="gallery-card">
+
+                        <span class="facility-tag">LIBRARY</span>
+
+                        <img src="assets/images/imgloyola/labclass/library2.jpeg" alt="">
+
+                        <div class="gallery-overlay">
+                            <h3>Well-Stocked Library</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Smart Classroom -->
+                <div class="swiper-slide">
+                    <div class="gallery-card">
+
+                        <span class="facility-tag">SMART CLASS</span>
+
+                        <img src="assets/images/imgloyola/labclass/classroom.jpeg" alt="">
+
+                        <div class="gallery-overlay">
+                            <h3>Smart Classroom</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Playground -->
+                <div class="swiper-slide">
+                    <div class="gallery-card">
+
+                        <span class="facility-tag">SPORTS</span>
+
+                        <img src="assets/images/imgloyola/labclass/playground.jpeg" alt="">
+
+                        <div class="gallery-overlay">
+                            <h3>Spacious Playground</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Transport -->
+                <div class="swiper-slide">
+                    <div class="gallery-card">
+
+                        <span class="facility-tag">TRANSPORT</span>
+
+                        <img src="assets/images/imgloyola/labclass/bus.jpeg" alt="">
+
+                        <div class="gallery-overlay">
+                            <h3>Safe School Transport</h3>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+            <div class="slider-button">
+
+                <div class="swiper-btn swiper-button-prev">
+                    <i class="fal fa-arrow-left"></i>
+                </div>
+
+                <div class="swiper-btn swiper-button-next">
+                    <i class="fal fa-arrow-right"></i>
                 </div>
 
             </div>
@@ -580,13 +754,12 @@ critical thinking, holistic development, and empowering every student to become 
     </div>
 
 </section>
-<!-- Modern Facilities Section End -->
 
 
 <!-- ===========================
      Management Team Section Start
 ============================ -->
-<section class="tmp-testimonials-area3 m-0 tmp-section-gap" style="background-color:#B8924A;">
+<section class="tmp-testimonials-area3 m-0 tmp-section-gap" style="background-color:#1313a1;">
     <div class="container-3">
         <div class="row g-5">
 
@@ -596,32 +769,32 @@ critical thinking, holistic development, and empowering every student to become 
 
                     <div class="feedback-wrapper">
 
-                        <p class="sub-title">
-                            <img src="assets/images/testimonials/quote3.svg" alt="">
+                        <p class="sub-title" style="font-size: 35px;color: #fff;">
+                          
                             Management Team
                         </p>
 
-                        <h3 class="title">
+                        <h3 class="title" style="font-size: 20px;color:#ffffff;">
                             Visionary Leaders Shaping Future Generations
                         </h3>
 
-                        <p class="desc">
-                            Our dedicated leadership team is committed to providing
-                            quality education, nurturing young minds, and creating
-                            an environment where every student can grow academically,
-                            morally, and socially.
+                        <p class="desc" style="text-align: justify;color: #ffffff;">
+                          Loyola International Public School is guided by a dedicated management team committed 
+                          to providing quality education, nurturing values, and creating opportunities for every
+                           student to excel academically and personally. Under the leadership of the Sacred Heart 
+                           Educational Trust, the institution strives to uphold the highest standards of education while fostering discipline, innovation, and holistic development. 
                         </p>
 
                         <div class="bottom-service">
-                            <p>
-                                <span>25+</span> Years of Educational Excellence
+                            <p style="color: #fff;">
+                                <span style="color:#ffffff;">25+</span> Years of Educational Excellence
                             </p>
                         </div>
 
                     </div>
 
-                    <div class="pagination-area">
-                        <div class="swiper-pagination-n"></div>
+                    <div class="pagination-area" >
+                        <div class="swiper-pagination-n" ></div>
                     </div>
 
                 </div>
@@ -642,7 +815,7 @@ critical thinking, holistic development, and empowering every student to become 
                                 <div class="testimonial-wrapper4">
 
                                     <div class="image-area">
-                                        <img src="assets/images/imgloyola/banner/Group 3.png"
+                                        <img src="assets/images/imgloyola/infra/founder.png"
                                             width="298"
                                             alt="Founder">
                                     </div>
@@ -653,26 +826,20 @@ critical thinking, holistic development, and empowering every student to become 
                                             Founder Message
                                         </h3>
 
-                                        <p class="desc">
-                                            Our vision is to provide an inspiring
-                                            educational environment where every
-                                            child develops confidence, discipline,
-                                            compassion, and a passion for lifelong
-                                            learning. Together, we build responsible
-                                            citizens and future leaders.
+                                        <p class="desc" style="text-align: justify;">
+                                            Education is the most powerful instrument for transforming lives and building 
+                                            a progressive society. At Loyola International Public School, our vision is 
+                                            to provide quality education that reaches every child, especially in semi-urban
+                                             and rural communities. We believe that true education goes beyond textbooks 
+                                             by nurturing character, values, creativity, and leadership. Our commitment 
+                                             is to create a learning environment where every student is inspired to dream
+                                              big, work hard, and become a responsible citizen who contributes positively 
+                                              to society. Guided by our motto, 'Educate and Elevate,'
+                                             we continue to empower young minds with knowledge, confidence,
+                                              and compassion for a brighter future.
                                         </p>
 
-                                        <div class="author-area">
-                                            <div class="author-content">
-                                                <h4 class="title">
-                                                    Founder Name
-                                                </h4>
-                                                <p class="designation">
-                                                    Founder & Chairman
-                                                </p>
-                                            </div>
-                                        </div>
-
+                                  
                                     </div>
 
                                 </div>
@@ -696,22 +863,16 @@ critical thinking, holistic development, and empowering every student to become 
                                             Principal Message
                                         </h3>
 
-                                        <p class="desc">
-                                            We believe that every child has unique
-                                            potential. Through innovative teaching,
-                                            strong values, and holistic education,
-                                            we prepare our students to face future
-                                            challenges with confidence and integrity.
+                                        <p class="desc" style="text-align: justify;">
+                                            Education is not merely the acquisition of knowledge but the development of wisdom, character, and confidence. At Loyola International Public School, we strive to create an inspiring environment where every child is encouraged to think creatively, learn with curiosity, and grow into a responsible global citizen. Our dedicated faculty, modern teaching methodologies, and value-based education ensure that every student receives the guidance needed to achieve academic excellence and personal success. Together with our parents and community,
+                                             we are committed to shaping young minds into compassionate leaders of tomorrow. 
                                         </p>
 
                                         <div class="author-area">
                                             <div class="author-content">
                                                 <h4 class="title">
-                                                    Principal Name
+                                                  Mr. S. Godwin Raj
                                                 </h4>
-                                                <p class="designation">
-                                                    Principal
-                                                </p>
                                             </div>
                                         </div>
 
@@ -774,7 +935,7 @@ critical thinking, holistic development, and empowering every student to become 
                 <h2 class="section-title tmp-title-split"
                     data-sal="slide-up-large"
                     data-sal-duration="1000"
-                    data-sal-delay="300">
+                    data-sal-delay="300" style="font-size: 33px;">
                     Activities That Inspire <br>
                     Learning Beyond the Classroom
                 </h2>
@@ -785,7 +946,7 @@ critical thinking, holistic development, and empowering every student to become 
                 data-sal-duration="1000"
                 data-sal-delay="100">
 
-                <p class="desc">
+                <p class="desc" style="text-align: justify;">
                     At Loyola International Public School, students are encouraged to
                     explore their talents beyond academics through sports, arts,
                     cultural activities, leadership programmes, and skill development
@@ -1181,92 +1342,76 @@ critical thinking, holistic development, and empowering every student to become 
 <section class="school-gallery tmp-section-gap" style="background:#f7faff;">
 
     <div class="container">
+<!-- Section Heading -->
+<div class="text-center mb-5">
 
-        <!-- Section Heading -->
-        <div class="text-center mb-5">
-            <span class="gallery-subtitle">OUR GALLERY</span>
-            <h2 class="gallery-title">
-                Capturing Memorable Moments
-            </h2>
-            <p class="gallery-description">
-                Explore the vibrant moments of Loyola International Public School through
-                academics, celebrations, sports, cultural events and student achievements.
-            </p>
-        </div>
-<div class="gallery-grid">
+    <span class="gallery-subtitle">
+        📸 OUR MEMORIES
+    </span>
 
-    <!-- 1 -->
-    <div class="gallery-item large">
-        <img src="assets/images/imgloyola/events/animalday.jpeg" alt="Animal Day">
-        <div class="gallery-overlay">
+    <h2 class="gallery-title">
+        Every Moment Tells a Story
+    </h2>
+
+    <p class="gallery-description" style="text-align: justify;">
+        Discover the inspiring journey of Loyola International Public School through
+        vibrant classroom experiences, academic excellence, cultural celebrations,
+        sports achievements, and unforgettable moments that shape every student's future.
+    </p>
+
+</div>
+
+<div class="custom-gallery">
+
+    <!-- Image 1 -->
+    <div class="gallery-item item1">
+        <img src="assets/images/imgloyola/events/animalday.jpeg" alt="">
+        <div class="overlay">
             <h4>Animal Day</h4>
-            <span>Learning Through Fun</span>
         </div>
     </div>
 
-    <!-- 2 -->
-    <div class="gallery-item">
-        <img src="assets/images/imgloyola/events/annualday1.jpeg" alt="Annual Day">
-        <div class="gallery-overlay">
+    <!-- Image 2 -->
+    <div class="gallery-item item2">
+        <img src="assets/images/imgloyola/events/annualday1.jpeg" alt="">
+        <div class="overlay">
             <h4>Annual Day</h4>
-            <span>Celebrating Excellence</span>
         </div>
     </div>
 
-    <!-- 3 -->
-    <div class="gallery-item">
-        <img src="assets/images/imgloyola/events/christmas.jpeg" alt="Christmas">
-        <div class="gallery-overlay">
-            <h4>Christmas Celebration</h4>
-            <span>Festival of Joy</span>
+    <!-- Image 3 -->
+    <div class="gallery-item item3">
+        <img src="assets/images/imgloyola/events/christmas.jpeg" alt="">
+        <div class="overlay">
+            <h4>Christmas</h4>
         </div>
     </div>
 
-    <!-- 4 -->
-    <div class="gallery-item tall">
-        <img src="assets/images/imgloyola/events/graduationday.jpeg" alt="Graduation Day">
-        <div class="gallery-overlay">
+    <!-- Image 4 -->
+    <div class="gallery-item item4">
+        <img src="assets/images/imgloyola/events/graduationday.jpeg" alt="">
+        <div class="overlay">
             <h4>Graduation Day</h4>
-            <span>Proud Achievement</span>
         </div>
     </div>
 
-    <!-- 5 -->
-    <div class="gallery-item">
-        <img src="assets/images/imgloyola/events/greenday.jpeg" alt="Green Day">
-        <div class="gallery-overlay">
+    <!-- Image 5 -->
+    <div class="gallery-item item5">
+        <img src="assets/images/imgloyola/events/greenday.jpeg" alt="">
+        <div class="overlay">
             <h4>Green Day</h4>
-            <span>Save Nature</span>
         </div>
     </div>
 
-    <!-- 6 -->
-    <div class="gallery-item">
-        <img src="assets/images/imgloyola/events/independenceday.jpeg" alt="Independence Day">
-        <div class="gallery-overlay">
-            <h4>Independence Day</h4>
-            <span>Proud To Be Indian</span>
-        </div>
-    </div>
-
-    <!-- 7 -->
-    <div class="gallery-item wide">
-        <img src="assets/images/imgloyola/events/plantingday.jpeg" alt="Tree Plantation">
-        <div class="gallery-overlay">
+    <!-- Image 6 -->
+    <div class="gallery-item item6">
+        <img src="assets/images/imgloyola/events/plantingday.jpeg" alt="">
+        <div class="overlay">
             <h4>Tree Plantation</h4>
-            <span>Growing Together</span>
         </div>
     </div>
 
 </div>
-        <!-- Button -->
-        <div class="text-center mt-5">
-            <a href="gallery.html" class="tmp-btn btn-primary">
-                View Full Gallery
-            </a>
-        </div>
-
-    </div>
 
 </section>
 <!-- ===========================
@@ -1496,19 +1641,22 @@ critical thinking, holistic development, and empowering every student to become 
 
             </div>
 
-            <div class="col-lg-6 text-lg-end">
+<div class="col-lg-6 text-lg-end text-center">
 
-                <a href="privacy-policy.html">
-                    Privacy Policy
-                </a>
+    <a href="https://yourwebsite.com" target="_blank" class="developer-credit">
+        <span style="color: whitesmoke;font-weight: 600;">Design & Developed by</span>
 
-                <span class="divider" style="color: rgb(37, 35, 35);">|</span>
 
-                <a href="terms.html">
-                    Terms & Conditions
-                </a>
 
-            </div>
+    <a href="https://yourwebsite.com" target="_blank">
+        <img src="assets/images/imgloyola/icon/companylogo.png"
+             alt="Developer Logo"
+             style="height:40px;">
+    </a>
+
+
+
+</div>
 
         </div>
 
@@ -1775,9 +1923,6 @@ critical thinking, holistic development, and empowering every student to become 
     </div>
 
 
-    <div class="mouse-cursor cursor-outer"></div>
-    <div class="mouse-cursor cursor-inner"></div>
-
 
 
 
@@ -1986,5 +2131,4 @@ critical thinking, holistic development, and empowering every student to become 
 </body>
 
 
-<!-- Mirrored from html.inversweb.com/constx/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jul 2026 02:09:51 GMT -->
 </html>
