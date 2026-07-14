@@ -358,7 +358,7 @@ p {
 @media only screen and (max-width: 767px) {
   p {
     margin: 0 0 20px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 28px;
   }
 }
@@ -47690,253 +47690,6 @@ ul.mega-menu-item.parent-nav {
 }
 /*# sourceMappingURL=../maps/style.css.map */
 
-/*=========================================
-  DESKTOP IMAGE SLIDER
-=========================================*/
-
-/*==================================================
- HERO SLIDER
-==================================================*/
-
-.hero-slider{
-    position:relative;
-    width:100%;
-    height:100vh;
-    overflow:hidden;
-    background:#000;
-}
-
-/* Slides */
-
-.slide{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    opacity:0;
-    visibility:hidden;
-    transition:opacity .8s ease;
-}
-
-.slide.active{
-    opacity:1;
-    visibility:visible;
-}
-
-.slide img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-    display:block;
-}
-
-/* Dark Overlay */
-
-.slide::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-}
-
-/*==================================================
- PREVIOUS / NEXT BUTTONS
-==================================================*/
-
-.slider-btn{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    width:55px;
-    height:55px;
-    border:none;
-    border-radius:50%;
-    background:rgba(255,255,255,.20);
-    color:#fff;
-    font-size:28px;
-    cursor:pointer;
-    transition:.3s;
-    z-index:100;
-}
-
-.slider-btn:hover{
-    background:#0056d6;
-}
-
-.prev{
-    left:25px;
-}
-
-.next{
-    right:25px;
-}
-
-/*==================================================
- DOTS
-==================================================*/
-
-.slider-dots{
-    position:absolute;
-    bottom:25px;
-    left:50%;
-    transform:translateX(-50%);
-    display:flex;
-    gap:12px;
-    z-index:100;
-}
-
-.dot{
-    width:12px;
-    height:12px;
-    border-radius:50%;
-    background:rgba(255,255,255,.5);
-    cursor:pointer;
-    transition:.3s;
-}
-
-.dot.active{
-    width:35px;
-    border-radius:30px;
-    background:#fff;
-}
-
-/*==================================================
- LARGE DESKTOP
-==================================================*/
-
-@media (min-width:1600px){
-
-.hero-slider{
-    height:900px;
-}
-
-}
-
-/*==================================================
- LAPTOP
-==================================================*/
-
-@media (max-width:1200px){
-
-.hero-slider{
-    height:80vh;
-}
-
-}
-
-/*==================================================
- TABLET
-==================================================*/
-
-@media (max-width:992px){
-
-.hero-slider{
-    height:70vh;
-}
-
-.slider-btn{
-    width:48px;
-    height:48px;
-    font-size:22px;
-}
-
-}
-
-/*==================================================
- MOBILE
-==================================================*/
-
-@media (max-width:768px){
-
-.hero-slider{
-    height:45vh;
-}
-
-.slide img{
-    object-fit:cover;
-    object-position:center;
-}
-
-.slider-btn{
-    width:40px;
-    height:40px;
-    font-size:18px;
-}
-
-.prev{
-    left:10px;
-}
-
-.next{
-    right:10px;
-}
-
-.slider-dots{
-    bottom:15px;
-}
-
-.dot{
-    width:10px;
-    height:10px;
-}
-
-.dot.active{
-    width:28px;
-}
-
-}
-
-/*==================================================
- SMALL MOBILE
-==================================================*/
-
-@media (max-width:480px){
-
-.hero-slider{
-    height:45vh;
-}
-
-.slide img{
-    object-fit:cover;
-    object-position:center;
-}
-
-.slider-btn{
-    width:40px;
-    height:40px;
-    font-size:18px;
-}
-
-.prev{
-    left:10px;
-}
-
-.next{
-    right:10px;
-}
-
-.slider-dots{
-    bottom:15px;
-}
-
-.dot{
-    width:10px;
-    height:10px;
-}
-
-.dot.active{
-    width:28px;
-}
-
-}
-
-/* =========================
-   LOGO AREA
-========================= */
 /* =========================
    LOGO AREA
 ========================= */
@@ -48753,4 +48506,102 @@ font-size:14px;
     font-size:15px;
     font-weight:600;
     letter-spacing:0.3px;
+}
+
+
+/*=========================================
+  DESKTOP IMAGE SLIDER
+=========================================*/
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: auto;   /* 🔥 important */
+  overflow: hidden;
+  padding-top:0px;
+}
+
+/* Slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative; /* 🔥 keeps height based on image */
+}
+
+/* Image Fix */
+.slide img {
+  width: 100%;
+  height: auto;       /* 🔥 keep original ratio */
+  object-fit: contain;
+  display: block;
+}
+
+.hero-slider{
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slider Buttons */
+.slider-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease;
+    z-index: 100;
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+}
+
+.slider-btn.prev{
+    left: 25px;
+}
+
+.slider-btn.next{
+    right: 25px;
+}
+
+.slider-btn:hover{
+    background: #0B6CB8;
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 12px 30px rgba(11,108,184,.45);
+}
+
+.slider-btn:active{
+    transform: translateY(-50%) scale(.95);
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .slider-btn{
+        width:44px;
+        height:44px;
+        font-size:22px;
+    }
+
+    .slider-btn.prev{
+        left:12px;
+    }
+
+    .slider-btn.next{
+        right:12px;
+    }
 }

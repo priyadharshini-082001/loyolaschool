@@ -248,127 +248,61 @@
 
 
 
-    
-<section class="hero-slider">
+    <section class="hero-slider" >
 
-    <div class="slide active">
-        <img src="assets/images/imgloyola/banner/hero1.png" alt="Banner 1">
-    </div>
+<div class="slide active">
+    <img src="assets/images/imgloyola/banner/hero1.png" alt="">
+</div>
 
-    <div class="slide">
-        <img src="assets/images/imgloyola/banner/hero2.png" alt="Banner 2">
-    </div>
+<div class="slide">
+    <img src="assets/images/imgloyola/banner/hero2.png" alt="">
+</div>
 
+<div class="slide">
+    <img src="assets/images/imgloyola/banner/hero3.png" alt="">
+</div>
 
-      <div class="slide">
-        <img src="assets/images/imgloyola/banner/hero3.png" alt="Banner 2">
-    </div>
+    <!-- Controls -->
+<button class="slider-btn prev" aria-label="Previous Slide">
+    &#10094;
+</button>
 
-
-    <button class="slider-btn prev">&#10094;</button>
-    <button class="slider-btn next">&#10095;</button>
-
-    <div class="slider-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-    </div>
+<button class="slider-btn next" aria-label="Next Slide">
+    &#10095;
+</button>
 
 </section>
 
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
 
-    const slides = document.querySelectorAll(".slide");
-    const dots = document.querySelectorAll(".dot");
-    const prevBtn = document.querySelector(".prev");
-    const nextBtn = document.querySelector(".next");
+        <script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
 
-    let index = 0;
-    let autoSlide;
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
 
-    // Exit if no slides
-    if (slides.length === 0) return;
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
 
-    // Show selected slide
-    function showSlide(i) {
+function prevSlide() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+}
 
-        slides.forEach(slide => {
-            slide.classList.remove("active");
-        });
+document.querySelector(".next").onclick = nextSlide;
+document.querySelector(".prev").onclick = prevSlide;
 
-        dots.forEach(dot => {
-            dot.classList.remove("active");
-        });
-
-        slides[i].classList.add("active");
-
-        if (dots[i]) {
-            dots[i].classList.add("active");
-        }
-    }
-
-    // Next
-    function nextSlide() {
-        index++;
-        if (index >= slides.length) {
-            index = 0;
-        }
-        showSlide(index);
-    }
-
-    // Previous
-    function prevSlide() {
-        index--;
-        if (index < 0) {
-            index = slides.length - 1;
-        }
-        showSlide(index);
-    }
-
-    // Buttons
-    if (nextBtn) {
-        nextBtn.addEventListener("click", nextSlide);
-    }
-
-    if (prevBtn) {
-        prevBtn.addEventListener("click", prevSlide);
-    }
-
-    // Dots
-    dots.forEach((dot, i) => {
-        dot.addEventListener("click", function () {
-            index = i;
-            showSlide(index);
-        });
-    });
-
-    // Auto Slide
-    function startSlider() {
-        autoSlide = setInterval(nextSlide, 5000);
-    }
-
-    function stopSlider() {
-        clearInterval(autoSlide);
-    }
-
-    startSlider();
-
-    // Pause on hover (desktop)
-    const slider = document.querySelector(".hero-slider");
-
-    if (slider) {
-        slider.addEventListener("mouseenter", stopSlider);
-        slider.addEventListener("mouseleave", startSlider);
-    }
-
-});
+// Auto slide
+setInterval(nextSlide, 4000);
 </script>
 
-
-
  <!-- About Area Start -->
-    <section class="tmp-about-area4 tmp-section-gapBottom" style="background-color: #ffffff;">
+    <section class="tmp-about-area4 " style="background-color: #ffffff;padding: 50px 0px;">
         <div class="container-3">
             <div class="section-inner">
                 <div class="row">
@@ -430,7 +364,7 @@ With experienced educators, modern infrastructure, and a safe, student-centered 
 
                     <div class="col-lg-6">
                         <div class="about-wrapper">
-                            <div class="icon"><img src="assets/images/about/icon/09.svg" alt=""></div>
+                            <div class="icon"><img src="assets/images/imgloyola/icon/09.svg" alt=""></div>
                             <div class="content">
                                 <h3 class="title">VISION</h3>
                                 <p class="desc" style="text-align: justify;">
@@ -440,7 +374,7 @@ To nurture confident, compassionate, and responsible global citizens through qua
                     </div>
                     <div class="col-lg-6">
                         <div class="about-wrapper bg">
-                            <div class="icon"><img src="assets/images/about/icon/10.svg" alt=""></div>
+                            <div class="icon"><img src="assets/images/imgloyola/icon/10.svg" alt=""></div>
                             <div class="content">
                                 <h3 class="title">MISSION</h3>
                                 <p class="desc" style="text-align: justify;">
@@ -475,7 +409,7 @@ critical thinking, holistic development, and empowering every student to become 
                     data-sal-duration="800"
                     data-sal-delay="200">
 
-                    <div class="working-process-wrapper6 cp-none">
+                    <div class="working-process-wrapper6">
                         <div class="content text-center">
                             <p class="number">01</p>
                             <h3 class="title">
@@ -559,7 +493,7 @@ critical thinking, holistic development, and empowering every student to become 
                         <div class="gallery-card">
                             <img src="assets/images/imgloyola/labclass/biologylab.jpeg" alt="Biology Lab">
                             <div class="gallery-overlay">
-                                <span class="gallery-tag">Science Lab</span>
+
                                 <h3>Biology Laboratory</h3>
                             </div>
                         </div>
@@ -570,7 +504,7 @@ critical thinking, holistic development, and empowering every student to become 
                         <div class="gallery-card">
                             <img src="assets/images/imgloyola/labclass/computerlab.jpeg" alt="Computer Lab">
                             <div class="gallery-overlay">
-                                <span class="gallery-tag">Technology</span>
+     
                                 <h3>Computer Laboratory</h3>
                             </div>
                         </div>
@@ -581,7 +515,6 @@ critical thinking, holistic development, and empowering every student to become 
                         <div class="gallery-card">
                             <img src="assets/images/imgloyola/labclass/physicslab.jpeg" alt="Physics Lab">
                             <div class="gallery-overlay">
-                                <span class="gallery-tag">Science Lab</span>
                                 <h3>Physics Laboratory</h3>
                             </div>
                         </div>
@@ -592,7 +525,6 @@ critical thinking, holistic development, and empowering every student to become 
                         <div class="gallery-card">
                             <img src="assets/images/imgloyola/labclass/library2.jpeg" alt="Library">
                             <div class="gallery-overlay">
-                                <span class="gallery-tag">Learning</span>
                                 <h3>Well-Stocked Library</h3>
                             </div>
                         </div>
@@ -603,7 +535,6 @@ critical thinking, holistic development, and empowering every student to become 
                         <div class="gallery-card">
                             <img src="assets/images/imgloyola/labclass/classroom.jpeg" alt="Smart Classroom">
                             <div class="gallery-overlay">
-                                <span class="gallery-tag">Academics</span>
                                 <h3>Smart Classrooms</h3>
                             </div>
                         </div>
@@ -614,7 +545,6 @@ critical thinking, holistic development, and empowering every student to become 
                         <div class="gallery-card">
                             <img src="assets/images/imgloyola/labclass/playground.jpeg" alt="Playground">
                             <div class="gallery-overlay">
-                                <span class="gallery-tag">Sports</span>
                                 <h3>Spacious Playground</h3>
                             </div>
                         </div>
@@ -625,7 +555,6 @@ critical thinking, holistic development, and empowering every student to become 
                         <div class="gallery-card">
                             <img src="assets/images/imgloyola/labclass/bus.jpeg" alt="School Transport">
                             <div class="gallery-overlay">
-                                <span class="gallery-tag">Transport</span>
                                 <h3>Safe School Transport</h3>
                             </div>
                         </div>
@@ -2008,11 +1937,7 @@ critical thinking, holistic development, and empowering every student to become 
 
 
 
-    <div class="scrollbar-v show-on-scroll"></div>
-    <div class="float-text show-on-scroll">
-        <span><a href="#">Scroll to top</a></span>
-    </div>
-
+  
 
     <!-- jquery js -->
     <script src="assets/js/plugins/jquery-3.7.1.min.js" defer></script>
