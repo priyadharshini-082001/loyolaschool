@@ -48021,7 +48021,7 @@ ul.mega-menu-item.parent-nav {
 
 .gallery-card img{
     width:100%;
-    height:320px;
+    height:420px;   /* Increased from 320px */
     object-fit:cover;
     display:block;
     transition:.5s;
@@ -48102,7 +48102,7 @@ ul.mega-menu-item.parent-nav {
 @media(max-width:991px){
 
 .gallery-card img{
-    height:280px;
+       height:360px; 
 }
 
 .gallery-overlay h3{
@@ -48114,7 +48114,7 @@ ul.mega-menu-item.parent-nav {
 @media(max-width:767px){
 
 .gallery-card img{
-    height:240px;
+    height:300px;
 }
 
 .gallery-overlay{
