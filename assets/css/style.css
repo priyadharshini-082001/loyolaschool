@@ -155,7 +155,7 @@ body {
     height:35px;
     border: none;
     border-radius: 50%;
-    background: linear-gradient(135deg,#0B6CB8,#0088ff);
+    background: #2d056e;
     color: #fff;
     font-size: 22px;
     cursor: pointer;
@@ -400,7 +400,7 @@ body {
 
 .video-content h2{
     font-size:36px;
-    color:#450d9f;
+    color:#2d056e;
     font-weight:700;
     margin-bottom:20px;
 
