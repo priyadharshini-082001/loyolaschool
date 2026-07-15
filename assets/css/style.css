@@ -46,7 +46,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rouge+Script&amp;display=swap");
 :root {
   --color-primary: #B8924A;
-  --color-primary-2:  #0B6CB8;
+  --color-primary-2:  #004bb3;
   --color-secondary: #FF7029;
   --color-secondary: rgb(255, 112, 41, .20);
   --color-body: #000000;
@@ -155,7 +155,7 @@ body {
     height:35px;
     border: none;
     border-radius: 50%;
-    background: #2d056e;
+    background:darkblue;
     color: #fff;
     font-size: 22px;
     cursor: pointer;
@@ -48063,8 +48063,8 @@ ul.mega-menu-item.parent-nav {
 ==================================================*/
 
 .footer-area {
-    background:#140861;
-    padding: 60px 0 45px;
+    background:#004bb3;
+    padding:15px 0 4px;
     color: #ffffff;
 }
 
@@ -48210,8 +48210,8 @@ ul.mega-menu-item.parent-nav {
 ==================================================*/
 
 .copyright-area {
-    background:#B8924A;
-    padding:20px 0;
+    background:darkblue;
+    padding:10px 0;
     color:black;
 }
 
