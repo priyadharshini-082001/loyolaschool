@@ -12,7 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A modern and responsive construction website template built for construction, interior design, handyman, plumber, renovation and maintenance businesses. Clean design, fast performance and SEO optimized for professional service websites.">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/imgloyola/logo/finallogo 1 1 (1).png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/imgloyola/logo/finallogo 1 1 (1).png" style=" width:100px;
+    height:100px;">
     <title>LOYOLA INTERNATION PUBLIC SCHOOL</title>
 
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -50,13 +51,102 @@
 
 <body class="home-six home-green">
 
-    <!-- Header Start -->
-    <div class="loader-wrapper">
-        <div class="loader">
-        </div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
+
+
+<div id="preloader">
+    <img src="assets/images/imgloyola/logo/logo.png" alt="Logo">
+</div>
+
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("preloader").classList.add("hide");
+
+        setTimeout(function () {
+            document.getElementById("preloader").remove();
+        }, 600);
+
+    }, 2000); // Loading time
+});
+</script>
+
+
+
+<div id="admissionPopup" class="popup-overlay">
+    <div class="popup-content">
+        <button class="close-btn">&times;</button>
+
+        <img src="assets/images/imgloyola/infra/17ea8edd-d0f6-43fb-8517-086b9bb94dcc.png"
+             alt="BMR Global School Admissions Open 2026-2027">
+
     </div>
+</div>
+
+
+<script>
+window.addEventListener("load", function () {
+
+    // Show popup after preloader finishes
+    setTimeout(function () {
+        document.getElementById("admissionPopup").style.display = "flex";
+    }, 1000);
+
+    // Close button
+    document.querySelector(".close-btn").addEventListener("click", function () {
+        document.getElementById("admissionPopup").style.display = "none";
+    });
+
+    // Close when clicking outside
+    document.getElementById("admissionPopup").addEventListener("click", function(e){
+        if(e.target === this){
+            this.style.display = "none";
+        }
+    });
+
+}); 
+</script>
+
+
+<a href="assets/images/imgloyola/infra/Mandatory-Public-Disclosure1.pdf"
+   target="_blank"
+   class="enquiry-btn" style="background-color: rgb(23, 23, 207);">
+   <span class="text">Mandatory disclosure</span>
+</a>
+
+
+<a href="https://wa.me/7395806656"
+   class="whatsapp-icon"
+   target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a> 
+
+
+<a href="#" id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<script>
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if(window.pageYOffset > 300){
+        backToTop.classList.add("show");
+    }else{
+        backToTop.classList.remove("show");
+    }
+});
+
+backToTop.addEventListener("click", function(e){
+    e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
+
+
     <!-- header srea start -->
     <header class="header-one header-seven inner header--sticky header-sticky-smooth">
         <!-- header top -->
@@ -68,8 +158,6 @@
 
                 <!-- Left Side -->
                 <div class="left">
-
-             
 
                     <!-- Address -->
                     <div class="single-component info-con">
@@ -108,11 +196,7 @@
                     </div>
 
                 </div>
-
-
-
-
-                
+               
                 <!-- Right Side -->
                 <div class="right">
 
@@ -251,12 +335,6 @@
         <!-- header style hearm end -->
     </header>
 
-
-
-
-   
-
-
 <div id="rs-slider" class="rs-slider slider6">
       <div class="slideshow-container">
 
@@ -268,7 +346,7 @@
 
 <div class="mySlides fade">
 
-    <img src="assets/images/imgloyola/banner/banner2.png" style="width:100%">
+    <img src="assets/images/imgloyola/banner/hero2.png" style="width:100%">
 
 </div>
 
@@ -277,14 +355,7 @@
     <img src="assets/images/imgloyola/banner/mainbanner.png" style="width:100%">
 
 </div>
-
-
-
-
 </div>
-
-
-
 
 <div style="text-align:center;margin-top: -2%;">
 <span class="dot"></span>
@@ -292,11 +363,7 @@
 <span class="dot"></span>
 </div>
 
-
             </div>
-
-
-
 
 <style>
 /* Slideshow container */
@@ -1177,6 +1244,27 @@ critical thinking, holistic development, and empowering every student to become 
                                 </div>
                             </div>
 
+                            <div class="swiper-slide">
+    <div class="service-wrapper-3">
+
+        <div class="top-content text-center">
+            <h3>Yoga</h3>
+        </div>
+
+        <div class="image-area">
+            <img src="assets/images/imgloyola/extra/yoga.png" alt="Yoga">
+
+            <div class="content">
+                <p class="desc" style="font-weight: 600;">
+                    Promote physical fitness, mental well-being, flexibility, and
+                    concentration through regular yoga practice and mindfulness activities.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
                         </div>
 
                     </div>
@@ -1342,81 +1430,94 @@ critical thinking, holistic development, and empowering every student to become 
 <!-- ===========================
      Gallery Section Start
 ============================ -->
-<section class="school-gallery tmp-section-gap" style="background:#f7faff;">
 
+<section class="school-gallery">
     <div class="container">
-<!-- Section Heading -->
-<div class="text-center mb-5">
 
-    <span class="gallery-subtitle">
-        📸 OUR MEMORIES
-    </span>
-
-    <h2 class="gallery-title">
-        Every Moment Tells a Story
-    </h2>
-
-    <p class="gallery-description" style="text-align: justify;">
-        Discover the inspiring journey of Loyola International Public School through
-        vibrant classroom experiences, academic excellence, cultural celebrations,
-        sports achievements, and unforgettable moments that shape every student's future.
+       <div class="gallery-title">
+    <span class="sub-title">✨ Our Memories</span>
+    <h2>Moments That Inspire</h2>
+    <p>
+        Every photograph tells a story of curiosity, creativity, achievement,
+        and joyful experiences that shape our students' journey.
     </p>
-
 </div>
 
-<div class="custom-gallery">
+<div class="featured-video-section">
 
-    <!-- Image 1 -->
-    <div class="gallery-item item1">
-        <img src="assets/images/imgloyola/events/animalday.jpeg" alt="">
-        <div class="overlay">
-            <h4>Animal Day</h4>
-        </div>
+    <div class="video-content">
+        <h2>Experience Loyola International Public School</h2>
+        <p>
+            Discover a vibrant learning environment where academic excellence,
+            innovation, discipline, and values come together to shape future leaders.
+            Watch our campus and student life in action.
+        </p>
     </div>
 
-    <!-- Image 2 -->
-    <div class="gallery-item item2">
-        <img src="assets/images/imgloyola/events/annualday1.jpeg" alt="">
-        <div class="overlay">
-            <h4>Annual Day</h4>
-        </div>
-    </div>
+    <div class="featured-video">
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            controls
+            poster="assets/images/imgloyola/banner/banner2.png">
 
-    <!-- Image 3 -->
-    <div class="gallery-item item3">
-        <img src="assets/images/imgloyola/events/christmas.jpeg" alt="">
-        <div class="overlay">
-            <h4>Christmas</h4>
-        </div>
-    </div>
+            <source src="assets/images/imgloyola/infra/WhatsApp Video 2026-07-12 at 9.18.10 AM.mp4" type="video/mp4">
 
-    <!-- Image 4 -->
-    <div class="gallery-item item4">
-        <img src="assets/images/imgloyola/events/graduationday.jpeg" alt="">
-        <div class="overlay">
-            <h4>Graduation Day</h4>
-        </div>
-    </div>
-
-    <!-- Image 5 -->
-    <div class="gallery-item item5">
-        <img src="assets/images/imgloyola/events/greenday.jpeg" alt="">
-        <div class="overlay">
-            <h4>Green Day</h4>
-        </div>
-    </div>
-
-    <!-- Image 6 -->
-    <div class="gallery-item item6">
-        <img src="assets/images/imgloyola/events/plantingday.jpeg" alt="">
-        <div class="overlay">
-            <h4>Tree Plantation</h4>
-        </div>
+        </video>
     </div>
 
 </div>
 
+
+        <div class="gallery-grid">
+
+    <div class="gallery-item">
+        <span class="gallery-tag">Annual Day</span>
+        <img src="assets/images/imgloyola/events/annualday1.jpeg" alt="Annual Day">
+    </div>
+
+    <div class="gallery-item">
+        <span class="gallery-tag">Christmas</span>
+        <img src="assets/images/imgloyola/events/christmas.jpeg" alt="Christmas">
+    </div>
+
+    <div class="gallery-item">
+        <span class="gallery-tag">Animal Day</span>
+        <img src="assets/images/imgloyola/events/animalday.jpeg" alt="Animal Day">
+    </div>
+
+    <div class="gallery-item">
+        <span class="gallery-tag">Graduation</span>
+        <img src="assets/images/imgloyola/events/graduationday.jpeg" alt="Graduation Day">
+    </div>
+
+    <div class="gallery-item">
+        <span class="gallery-tag">Green Day</span>
+        <img src="assets/images/imgloyola/events/greenday.jpeg" alt="Green Day">
+    </div>
+
+    <div class="gallery-item">
+        <span class="gallery-tag">Independence Day</span>
+        <img src="assets/images/imgloyola/events/independenceday.jpeg" alt="Independence Day">
+    </div>
+
+    <div class="gallery-item">
+        <span class="gallery-tag">Plantation Drive</span>
+        <img src="assets/images/imgloyola/events/plantingday.jpeg" alt="Plantation Drive">
+    </div>
+
+    <div class="gallery-item">
+        <span class="gallery-tag">Sports</span>
+        <img src="assets/images/imgloyola/extra/sports.png" alt="Sports">
+    </div>
+
+</div>
 </section>
+
+
+
 <!-- ===========================
      Gallery Section End
 ============================ -->
@@ -1930,8 +2031,32 @@ critical thinking, holistic development, and empowering every student to become 
     </div><!-- /.open-search -->
 
 
-
+<!-- Scroll To Top -->
+<button id="scrollTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
   
+
+
+<script>
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+        scrollBtn.style.display = "flex";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>
+
 
     <!-- jquery js -->
     <script src="assets/js/plugins/jquery-3.7.1.min.js" defer></script>
