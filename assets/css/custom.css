@@ -1090,7 +1090,7 @@ Custom Gallery Layout
 
 .bg-breadcrumb{
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                url("/assets/images/imgloyola/banner/banner1.webp") center center/cover no-repeat;
+                url("/assets/images/imgloyola/banner/hero1.png") center center/cover no-repeat;
     position: relative;
 }
 
@@ -1748,43 +1748,146 @@ Custom Gallery Layout
 /*==========================
       RESPONSIVE
 ===========================*/
-
-@media(max-width:991px){
+/*==========================
+      RESPONSIVE
+===========================*/
 
 @media (max-width:991px){
 
-.rule-card,
-.rule-card.reverse{
-    flex-direction:column;
-    text-align:center;
+    .rules-section{
+        padding:10px 15px;
+    }
+
+    .rule-card,
+    .rule-card.reverse{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+        padding:25px;
+    }
+
+    .rule-image{
+        width:220px;
+        min-width:220px;
+    }
+
+    .rule-image img{
+        width:220px;
+        height:220px;
+    }
+
+    .rule-content h2{
+        font-size:28px;
+    }
+
+    .rule-content p{
+        text-align:justify;
+    }
+
+    .rule-content ul{
+        text-align:left;
+    }
+
+    .section-title h1{
+        font-size:34px;
+    }
+
+    .section-title p{
+        font-size:16px;
+    }
 }
 
-.rule-image{
-    width:180px;
-    min-width:180px;
+/* Mobile */
+@media (max-width:576px){
+
+    .rules-section{
+        padding:10px;
+    }
+
+    .rule-card,
+    .rule-card.reverse{
+        padding:18px;
+        border-radius:18px;
+        gap:18px;
+        margin-bottom:25px;
+    }
+
+    .rule-card::before{
+        width:120px;
+        height:120px;
+        top:-40px;
+        right:-40px;
+    }
+
+    .rule-image{
+        width:250px;
+        min-width:250px;
+    }
+
+    .rule-image img{
+        width:250px;
+        height:250px;
+        object-fit:cover;
+        border-width:4px;
+        border-radius:18px;
+    }
+
+
+
+    .badge{
+        font-size:12px;
+        padding:5px 14px;
+    }
+
+    .rule-content h2{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+
+    .rule-content p{
+        font-size:14px;
+        line-height:1.7;
+        margin-bottom:15px;
+    }
+
+    .rule-content li{
+        font-size:14px;
+        line-height:1.7;
+        padding-left:24px;
+        margin-bottom:8px;
+    }
+
+    .section-title h1{
+        font-size:28px;
+    }
+
+    .section-title p{
+        font-size:15px;
+    }
 }
 
-.rule-image img{
-    width:180px;
-    height:180px;
-}
+/* Extra Small Mobile */
+@media (max-width:375px){
 
-}
+    .rule-image{
+        width:200px;
+        min-width:200px;
+    }
 
-.rule-content h2{
-    font-size:28px;
-}
+    .rule-image img{
+        width:200px;
+        height:200px;
+    }
 
-.rule-content ul{
-    text-align:left;
-}
+    .rule-content h2{
+        font-size:20px;
+    }
 
-.section-title h1{
-    font-size:34px;
+    .rule-content p,
+    .rule-content li{
+        font-size:13px;
+    }
 }
-
-}
-
 
 /*==================================
     PRINCIPAL MESSAGE SECTION
@@ -1955,7 +2058,7 @@ Custom Gallery Layout
 @media(max-width:991px){
 
 .founder-section{
-    padding:60px 0;
+    padding:30px 0;
 }
 
 .founder-message-card{
@@ -1983,6 +2086,116 @@ Custom Gallery Layout
 }
 
 }
+
+/*========================
+      MOBILE VIEW
+========================*/
+
+@media(max-width:576px){
+
+    .founder-section::before{
+        width:180px;
+        height:180px;
+        top:-80px;
+        left:-80px;
+    }
+
+    .founder-section::after{
+        width:160px;
+        height:160px;
+        right:-60px;
+        bottom:-60px;
+    }
+
+
+    .founder-message-card{
+        padding:25px 20px;
+        border-radius:18px;
+    }
+
+    .founder-message-card::before{
+        width:5px;
+    }
+
+
+    .founder-title{
+        margin-bottom:25px;
+    }
+
+    .founder-title h2{
+        font-size:24px;
+        line-height:1.3;
+    }
+
+    .founder-title span{
+        font-size:12px;
+        padding:7px 18px;
+    }
+
+
+    .quote-box{
+        padding:20px;
+        border-radius:14px;
+        margin-bottom:25px;
+    }
+
+    .quote-box i{
+        font-size:30px;
+        margin-bottom:10px;
+    }
+
+    .quote-box h4{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+
+    .founder-content p{
+        font-size:14px;
+        line-height:1.8;
+        margin-bottom:15px;
+        text-align:justify;
+    }
+
+
+    .founder-sign{
+        margin-top:25px;
+        padding-top:20px;
+        text-align:center;
+    }
+
+    .founder-sign h4{
+        font-size:20px;
+    }
+
+    .founder-sign span{
+        font-size:14px;
+    }
+
+}
+
+
+/* Extra Small Mobile */
+@media(max-width:375px){
+
+    .founder-message-card{
+        padding:20px 15px;
+    }
+
+    .founder-title h2{
+        font-size:22px;
+    }
+
+    .quote-box h4{
+        font-size:15px;
+    }
+
+    .founder-content p{
+        font-size:13px;
+    }
+
+}
+
 
 .learning-grid{
     display:grid;
@@ -2100,6 +2313,64 @@ Custom Gallery Layout
     line-height:1.3;
 }
 
+/*==========================
+      MOBILE VIEW
+===========================*/
+
+@media (max-width:768px){
+
+    .learning-heading{
+        padding:30px 15px 0;
+    }
+
+    .learning-subtitle{
+        padding:7px 18px;
+        font-size:12px;
+        letter-spacing:0.8px;
+        margin-bottom:15px;
+    }
+
+    .learning-heading h2{
+        font-size:30px;
+        line-height:1.4;
+        margin-bottom:15px;
+    }
+
+}
+
+/* Small Mobile */
+@media (max-width:576px){
+
+    .learning-heading{
+        padding:25px 12px 0;
+    }
+
+    .learning-subtitle{
+        font-size:11px;
+        padding:6px 16px;
+    }
+
+    .learning-heading h2{
+        font-size:24px;
+        line-height:1.4;
+    }
+
+}
+
+/* Extra Small Mobile */
+@media (max-width:375px){
+
+    .learning-heading h2{
+        font-size:22px;
+    }
+
+    .learning-subtitle{
+        font-size:10px;
+        padding:5px 14px;
+    }
+
+}
+
 
 @media(max-width:768px){
 
@@ -2137,6 +2408,7 @@ Custom Gallery Layout
 .image-slider img.active{
     opacity:1;
 }
+
 
 /*==========================
     Mobile Responsive
@@ -2237,7 +2509,6 @@ Custom Gallery Layout
 }
 
 .container{
-    width:90%;
     max-width:1200px;
     margin:auto;
 }
