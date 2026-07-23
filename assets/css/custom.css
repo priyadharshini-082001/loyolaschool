@@ -1090,7 +1090,7 @@ Custom Gallery Layout
 
 .bg-breadcrumb{
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                url("/assets/images/imgloyola/banner/hero1.png") center center/cover no-repeat;
+                url("/assets/images/imgloyola/banner/banner1.webp") center center/cover no-repeat;
     position: relative;
 }
 
@@ -1705,7 +1705,7 @@ Custom Gallery Layout
 }
 
 .rule-content p{
-    color:#555;
+    color:#000000;
     line-height:1.8;
     margin-bottom:20px;
     text-align:justify;
