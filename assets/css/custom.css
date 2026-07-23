@@ -1845,13 +1845,14 @@ Custom Gallery Layout
     }
 
     .rule-content p{
-        font-size:14px;
+        font-size:15px;
         line-height:1.7;
         margin-bottom:15px;
+        color: #000000;
     }
 
     .rule-content li{
-        font-size:14px;
+        font-size:15px;
         line-height:1.7;
         padding-left:24px;
         margin-bottom:8px;
@@ -2151,7 +2152,7 @@ Custom Gallery Layout
 
 
     .founder-content p{
-        font-size:14px;
+        font-size:15px;
         line-height:1.8;
         margin-bottom:15px;
         text-align:justify;
