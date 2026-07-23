@@ -45,7 +45,7 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/custom.css">
+            <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
 
@@ -53,68 +53,6 @@
 <body class="home-six home-green">
 
 
-
-<div id="preloader">
-    <img src="assets/images/imgloyola/logo/logo.png" alt="Logo">
-
-    <p class="preloader-quote">
-        “The fear of the Lord is the beginning of knowledge”
-    </p>
-</div>
-
-<script>
-window.addEventListener("load", function () {
-
-    setTimeout(function () {
-
-        let loader = document.getElementById("preloader");
-
-        if(loader){
-            loader.classList.add("hide");
-
-            setTimeout(function(){
-                loader.remove();
-            },600);
-        }
-
-    },2000);
-
-});
-</script>
-</body>
-
-<div id="admissionPopup" class="popup-overlay">
-    <div class="popup-content">
-        <button class="close-btn">&times;</button>
-
-        <img src="assets/images/imgloyola/banner/admissionpopup.png"
-             alt="BMR Global School Admissions Open 2026-2027">
-
-    </div>
-</div> 
-
-<script>
-window.addEventListener("load", function () {
-
-    // Show popup after preloader finishes
-    setTimeout(function () {
-        document.getElementById("admissionPopup").style.display = "flex";
-    }, 1000);
-
-    // Close button
-    document.querySelector(".close-btn").addEventListener("click", function () {
-        document.getElementById("admissionPopup").style.display = "none";
-    });
-
-    // Close when clicking outside
-    document.getElementById("admissionPopup").addEventListener("click", function(e){
-        if(e.target === this){
-            this.style.display = "none";
-        }
-    });
-
-}); 
-</script>
 
 
 <a href="assets/images/imgloyola/infra/Mandatory-Public-Disclosure1.pdf"
@@ -207,9 +145,21 @@ backToTop.addEventListener("click", function(e){
                 <div class="right">
 
                     <ul class="social-wrapper-1 hover-bg-white">
-                     <li><a href="https://www.facebook.com/p/Loyola-International-Public-School-Theni-Tsindalaicherry-100069818297062/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/loyola_public_school_theni/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.youtube.com/@loyolapublicschool-theni3633"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="single">
+                            <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+
+                        <li class="single">
+                            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+
+                        <li class="single">
+                            <a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+
+                        <li class="single">
+                            <a target="_blank" href="#"><i class="fab fa-whatsapp"></i></a>
+                        </li>
                     </ul>
 
                 </div>
@@ -239,7 +189,7 @@ backToTop.addEventListener("click", function(e){
                                       <li class="main-nav has-dropdown has-menu-child-item project-a-after">
                                         <a href="#">About</a>
                                         <ul class="submenu parent-nav">
-                                            <li><a href="choose.html">About School</a></li>
+                                            <li><a href="school.html">About School</a></li>
                                             <li><a href="choose.html">why choose us</a></li>
                                             <li><a href="founder.html">Founder Message</a></li>
                                             <li><a href="principal.html">Principal Message</a></li>
@@ -273,7 +223,7 @@ backToTop.addEventListener("click", function(e){
                                     <li class="main-nav  project-a-after">
                                         <a href="facility.html">Facility</a>
                                     </li>
-<li class="main-nav project-a-after">
+<li class="main-nav  project-a-after">
                                         <a href="galary.html">Gallery</a>
                                     </li>
                                             
@@ -317,654 +267,30 @@ backToTop.addEventListener("click", function(e){
         <!-- header style hearm end -->
     </header>
 
-<div id="rs-slider" class="rs-slider slider6">
-      <div class="slideshow-container">
-
-<div class="mySlides fade">
-
-    <img src="assets/images/imgloyola/banner/hero3 (2).png" style="width:100%">
-
-</div>
-
-<div class="mySlides fade">
-
-    <img src="assets/images/imgloyola/banner/hero2.png" style="width:100%">
-
-</div>
-
-</div>
-
-<div style="text-align:center;margin-top: -2%;">
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-</div>
-
+        <!-- Header End -->
+    <!-- Breadcrumb Start -->
+    <!-- tmp breadcrumba area start -->
+    <div class="tmp-bread-crumb-area bg-breadcrumb gradient-breadcrumb-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- bread crumb inner wrapper -->
+                    <div class="breadcrumb-inner ptb--100 ptb_sm--100 text-center">
+                        <h1 class="title">Beyond Education</h1>
+                        <div class="meta">
+                            <a href="index.html" class="prev" style="color: white;">Home</a>
+                            <span><i class="fa-regular fa-chevron-right" style="color: white;"></i></span>
+                            <a href="house.html"  style="color: white;">House System</a>
+                        </div>
+                    </div>
+                    <!-- bread crumb inner wrapper end -->
+                </div>
             </div>
-
-<style>
-/* Slideshow container */
-.slideshow-container {
-    max-width: auto;
-    position: relative;
-    margin: auto;
-}
-
-/* Caption text */
-
-/* Number text (1/3 etc) */
-
-
-/* The dots/bullets/indicators */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.slider-dots,
-.dot,
-div[style*="text-align:center"]{
-    display: none !important;
-}
-
-.active {
-    background-color: #fff;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-.fade:not(.show) {
-    opacity: 1;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-@media only screen and (max-width: 600px) {
-    .testiItem02 .quotation {
-display: none !important;
-}
-}
-
-
-/* On smaller screens, decrease text size */
-</style>
-
-
-
-    <script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-</script>
-
-
-<div class="notice-bar">
-    <div class="notice-label">
-        📢 Latest Updates
-    </div>
-
-    <div class="notice-wrapper">
-        <div class="notice-track">
-            <span>
- 🏆 Excellence in Academics  🌱 Value-Based Education  👩‍🏫 Highly Qualified Faculty  💻 Digital Learning  ⚽ Sports & Cultural Activities  🎓 Empowering Minds, Inspiring Futures
-            </span>
-
         </div>
     </div>
-</div>
+    <!-- tmp breadcrumba area end -->
+    <!-- Breadcrumb End -->
 
- <!-- About Area Start -->
-    <section class="tmp-about-area4 " style="background-color: #ffffff;padding: 50px 0px;">
-        <div class="container-3">
-            <div class="section-inner">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="about-image-area5">
-                            <img src="assets/images/imgloyola/banner/Group 3.png" alt="">
-                            <div class="counter-area" data-parallax='{"x": -60, "y": 0}'>
-                                <div class="counter-wrapper">
-                                    <div class="icon" ><img src="assets/images/about/icon-01.svg" alt=""></div>
-                                    <h3 class="title-main"><span class="counter"><span class="odometer" data-count="30">00</span></span><span class="prefix">+</span></h3>
-                                    <p class="disc">
-                                        Years Of Experiance
-                                    </p>
-                                </div>
-                            </div>
-                         
-                         
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="right-side-content">
-                            <div class="section-title-area-4">
-                                <p class="sub-title cg" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100" >ABOUT SCHOOL</p>
-                                <h2 class="section-title tmp-title-split" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">Welcome to Loyola International Public School</h2>
-                                <p class="desc" data-sal="slide-up" data-sal-duration="800" data-sal-delay="500" style="text-align: justify;">
-Loyola International Public School, located in T. Sindalaicherry, Theni District, Tamil Nadu, is managed by the Sacred Heart Educational Trust. The school is dedicated to providing quality education through academic excellence, strong values, and holistic development.
-
-With experienced educators, modern infrastructure, and a safe, student-centered learning environment, we inspire students to think creatively, achieve confidently, and grow into responsible global citizens.
-</p>
-                            </div>
-                          
-                            <div class="button-area">
-                        
-                                <a href="about.html" class="tmp-btn btn-primary hover-icon-reverse" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
-                                    <span class="icon-reverse-wrapper">
-                                        <span class="btn-text">Explore More</span>
-                                    <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
-                                    <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
-                                    </span>
-                                </a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-    </section>
-    <!-- About Area End -->
-
-
-    <!-- About Area Start -->
-    <section class="tmp-about-area5 " style="background-color:#B8924A; padding: 50px;">
-
-      <div class="row g-5">
-
-                    <div class="col-lg-6">
-                        <div class="about-wrapper">
-                            <div class="icon"><img src="assets/images/imgloyola/icon/opportunity.png" alt="" style="width:120px;"></div>
-                            <div class="content">
-                                <h3 class="title">VISION</h3>
-                                <p class="desc" style="text-align: justify;">
-To nurture confident, compassionate, and responsible global citizens through quality education, innovative teaching,
- and value-based learning, inspiring lifelong learning, integrity, excellence, and positive contributions to society.</p>                           </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-wrapper bg">
-                            <div class="icon"><img src="assets/images/imgloyola/icon/dart-mission-goal-success-svgrepo-com.svg" 
-                                alt="" style="width:120px;" ></div>
-                            <div class="content">
-                                <h3 class="title">MISSION</h3>
-                                <p class="desc" style="text-align: justify;">
-To provide quality education in a safe and inclusive environment, fostering academic excellence, strong values , creativity,
-critical thinking, holistic development, and empowering every student to become a confident, responsible global citizen.</p>  
-</div>
-                        </div>
-                    </div>
-                </div>
-           
-    </section>
-    <!-- About Area End -->
-<!-- Academic Levels -->
-<section class="academic-section">
-    <div class="container-fluid px-lg-5 px-3">
-
-        <div class="section-title-area-3 text-center mb-5">
-            <p class="sub-title cg">
-                ACADEMICS
-            </p>
-
-            <h2 class="section-title">
-                Learning Journey
-            </h2>
-
-            <p class="academic-subtitle">
-                Every stage is thoughtfully designed to inspire curiosity,
-                build confidence, and prepare students for lifelong success.
-            </p>
-        </div>
-
-        <div class="row g-4 justify-content-center">
-
-            <!-- Primary -->
-            <div class="col-xl-4 col-lg-4 col-md-6">
-
-                <div class="academic-card">
-
-                    <div class="academic-image">
-
-                        <span class="academic-tag">
-                            Grades I – V
-                        </span>
-
-                        <img src="assets/images/imgloyola/infra/primary.png" alt="Primary School">
-
-                    </div>
-
-                    <div class="academic-content">
-
-                        <h3>Primary School</h3>
-
-                       <p style="text-align: justify;color: #000000;">
-                            A joyful learning environment where young minds
-                            develop strong academic foundations through
-                            interactive classrooms, creativity, and
-                            hands-on experiences.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Middle -->
-            <div class="col-xl-4 col-lg-4 col-md-6">
-
-                <div class="academic-card">
-
-                    <div class="academic-image">
-
-                        <span class="academic-tag">
-                            Grades VI – VIII
-                        </span>
-
-                        <img src="assets/images/imgloyola/infra/mid.jpeg" alt="Middle School">
-
-                    </div>
-
-                    <div class="academic-content">
-
-                        <h3>Middle School</h3>
-
-                    <p style="text-align: justify;color: #000000;">
-                            Empowering learners with analytical thinking,
-                            innovation, collaboration, and a balanced
-                            curriculum that nurtures both knowledge
-                            and character.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- Secondary -->
-            <div class="col-xl-4 col-lg-4 col-md-6">
-
-                <div class="academic-card">
-
-                    <div class="academic-image">
-
-                        <span class="academic-tag">
-                            Grades IX – XII
-                        </span>
-
-                        <img src="assets/images/imgloyola/labclass/classroom.jpeg" alt="Senior Secondary">
-
-                    </div>
-
-                    <div class="academic-content">
-
-                        <h3>Senior Secondary</h3>
-                        
-     <p style="text-align: justify;color: #000000;">
-                            Preparing future leaders through academic excellence,
-                            career-focused guidance, leadership opportunities,
-                            and holistic personal development.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-
-
-<!-- =========================
-     Modern Facilities
-========================= -->
-<section class="school-gallery-area tmp-section-gapBottom" style="background:#ebf3ff;padding:60px 0;">
-
-    <div class="container">
-
-        <div class="section-title-area-3 text-center mb-5">
-            <p class="sub-title cg">
-                OUR <span class="subtitle-bg">FACILITIES</span>
-            </p>
-
-            <h2 class="section-title">
-                Modern Facilities for Better Learning
-            </h2>
-        </div>
-
-        <div class="swiper tmp-slider-active-project-2">
-
-            <div class="swiper-wrapper">
-
-                <!-- Biology -->
-                <div class="swiper-slide">
-                    <div class="gallery-card">
-
-                        <span class="facility-tag">LAB</span>
-
-                        <img src="assets/images/imgloyola/labclass/biologylab.jpeg" alt="">
-
-                        <div class="gallery-overlay">
-                            <h3>Biology Laboratory</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Computer -->
-                <div class="swiper-slide">
-                    <div class="gallery-card">
-
-                        <span class="facility-tag">COMPUTER</span>
-
-                        <img src="assets/images/imgloyola/labclass/computerlab.jpeg" alt="">
-
-                        <div class="gallery-overlay">
-                            <h3>Computer Laboratory</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Physics -->
-                <div class="swiper-slide">
-                    <div class="gallery-card">
-
-                        <span class="facility-tag">LAB</span>
-
-                        <img src="assets/images/imgloyola/labclass/physicslab.jpeg" alt="">
-
-                        <div class="gallery-overlay">
-                            <h3>Physics Laboratory</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Library -->
-                <div class="swiper-slide">
-                    <div class="gallery-card">
-
-                        <span class="facility-tag">LIBRARY</span>
-
-                        <img src="assets/images/imgloyola/labclass/library2.jpeg" alt="">
-
-                        <div class="gallery-overlay">
-                            <h3>Well-Stocked Library</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Smart Classroom -->
-                <div class="swiper-slide">
-                    <div class="gallery-card">
-
-                        <span class="facility-tag">SMART CLASS</span>
-
-                        <img src="assets/images/imgloyola/labclass/classroom.jpeg" alt="">
-
-                        <div class="gallery-overlay">
-                            <h3>Smart Classroom</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Playground -->
-                <div class="swiper-slide">
-                    <div class="gallery-card">
-
-                        <span class="facility-tag">SPORTS</span>
-
-                        <img src="assets/images/imgloyola/labclass/playground.jpeg" alt="">
-
-                        <div class="gallery-overlay">
-                            <h3>Spacious Playground</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Transport -->
-                <div class="swiper-slide">
-                    <div class="gallery-card">
-
-                        <span class="facility-tag">TRANSPORT</span>
-
-                        <img src="assets/images/imgloyola/labclass/bus.jpeg" alt="">
-
-                        <div class="gallery-overlay">
-                            <h3>Safe School Transport</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Navigation -->
-            <div class="slider-button">
-
-                <div class="swiper-btn swiper-button-prev">
-                    <i class="fal fa-arrow-left"></i>
-                </div>
-
-                <div class="swiper-btn swiper-button-next">
-                    <i class="fal fa-arrow-right"></i>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ===========================
-     Management Team Section Start
-============================ -->
-<section class="tmp-testimonials-area3 m-0 tmp-section-gap" style="background-color: #004bb3;">
-    <div class="container-3">
-        <div class="row g-5">
-
-            <!-- Left Content -->
-            <div class="col-lg-4">
-                <div class="content-slider-inner home-ten">
-
-                    <div class="feedback-wrapper">
-
-                        <p class="sub-title" style="font-size: 35px;color: #fff;">
-                          
-                            Management Team
-                        </p>
-
-                        <h3 class="title" style="font-size: 20px;color:#ffffff;">
-                            Visionary Leaders Shaping Future Generations
-                        </h3>
-
-                        <p class="desc" style="text-align: justify;color: #ffffff;">
-                          Loyola International Public School is guided by a dedicated management team committed 
-                          to providing quality education, nurturing values, and creating opportunities for every
-                           student to excel academically and personally. Under the leadership of the Sacred Heart 
-                           Educational Trust, the institution strives to uphold the highest standards of education while fostering discipline, innovation, and holistic development. 
-                        </p>
-
-                        <div class="bottom-service">
-                            <p style="color: #fff;">
-                                <span style="color:#ffffff;">25+</span> Years of Educational Excellence
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="pagination-area" >
-                        <div class="swiper-pagination-n" ></div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Right Slider -->
-            <div class="col-lg-8 mt_sm--50 mt_md--60">
-
-                <div class="testimonial-slider-inner home-ten">
-
-                    <div class="swiper tmp-testimonialSlider3">
-
-                        <div class="swiper-wrapper">
-
-                            <!-- Founder Message -->
-                            <div class="swiper-slide">
-
-                                <div class="testimonial-wrapper4">
-
-                                    <div class="image-area1">
-                                        <img src="assets/images/imgloyola/banner/Group 3.png"
-                                            width="298"
-                                            alt="Founder">
-                                    </div>
-
-                                    <div class="content-area">
-
-                                        <h3 class="mb-3">
-                                            Founder Message
-                                        </h3>
-
-                                        <p class="desc" style="text-align: justify;">
-                                            Education is the most powerful instrument for transforming lives and building 
-                                            a progressive society. At Loyola International Public School, our vision is 
-                                            to provide quality education that reaches every child, especially in semi-urban
-                                             and rural communities. We believe that true education goes beyond textbooks 
-                                             by nurturing character, values, creativity, and leadership. Our commitment 
-                                             is to create a learning environment where every student is inspired to dream
-                                              big, work hard, and become a responsible citizen who contributes positively 
-                                              to society. Guided by our motto, 'Educate and Elevate,'
-                                             we continue to empower young minds with knowledge, confidence,
-                                              and compassion for a brighter future.
-                                        </p>
-
-                                  
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Principal Message -->
-                            <div class="swiper-slide">
-
-                                <div class="testimonial-wrapper4">
-
-                                    <div class="image-area1">
-                                        <img src="assets/images/imgloyola/infra/principal.png"
-                                            width="298"
-                                            alt="Principal">
-                                    </div>
-
-                                    <div class="content-area">
-
-                                        <h3 class="mb-3">
-                                            Principal Message
-                                        </h3>
-
-                                        <p class="desc" style="text-align: justify;">
-                                            Education is not merely the acquisition of knowledge but the development of wisdom, character, and confidence. At Loyola International Public School, we strive to create an inspiring environment where every child is encouraged to think creatively, learn with curiosity, and grow into a responsible global citizen. Our dedicated faculty, modern teaching methodologies, and value-based education ensure that every student receives the guidance needed to achieve academic excellence and personal success. Together with our parents and community,
-                                             we are committed to shaping young minds into compassionate leaders of tomorrow. 
-                                        </p>
-
-                                        <div class="author-area">
-                                            <div class="author-content">
-                                                <h4 class="title">
-                                                  Mr. S. Godwin Raj
-                                                </h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                
-
-                        </div>
-
-                    </div>
-
-                    <!-- Navigation -->
-                    <div class="swiper-navigation-area">
-
-                        <div class="swiper-btn swiper-button-prev">
-                            <div class="custom-overfolow-btn">
-                                <i class="invers-icon fal fa-arrow-left"></i>
-                                <i class="invers-icon-top fal fa-arrow-left"></i>
-                            </div>
-                        </div>
-
-                        <div class="swiper-btn swiper-button-next">
-                            <div class="custom-overfolow-btn">
-                                <i class="invers-icon fal fa-arrow-right"></i>
-                                <i class="invers-icon-top fal fa-arrow-right"></i>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- ===========================
-     Management Team Section End
-============================ -->
 
 <!-- Beyond Academics Area Start -->
 <section class="tmp-service-area area-3 tmp-section-gap" style="background:#ffffff;">
@@ -1275,104 +601,7 @@ critical thinking, holistic development, and empowering every student to become 
     </div>
 </section>
 <!-- Beyond Academics Area End -->
-
-<!-- ===========================
-     Gallery Section Start
-============================ -->
-
-<section class="school-gallery" style="background-color: aliceblue;">
-
-   
-    <div class="container">
-
-       <div class="gallery-title">
-    <span class="sub-title">✨ Our Memories</span>
-    <h2 style="color: #2d056e;">Moments That Inspire</h2>
-    <p>
-        Every photograph tells a story of curiosity, creativity, achievement,
-        and joyful experiences that shape our students' journey.
-    </p>
-</div>
-
-
-
-
-        <div class="gallery-grid">
-
-    <div class="gallery-item">
-        <span class="gallery-tag">Annual Day</span>
-        <img src="assets/images/imgloyola/events/annualday1.jpeg" alt="Annual Day">
-    </div>
-
-    <div class="gallery-item">
-        <span class="gallery-tag">Christmas</span>
-        <img src="assets/images/imgloyola/events/christmas.jpeg" alt="Christmas">
-    </div>
-
-    <div class="gallery-item">
-        <span class="gallery-tag">Animal Day</span>
-        <img src="assets/images/imgloyola/events/animalday.jpeg" alt="Animal Day">
-    </div>
-
-    <div class="gallery-item">
-        <span class="gallery-tag">Graduation</span>
-        <img src="assets/images/imgloyola/events/graduationday.jpeg" alt="Graduation Day">
-    </div>
-
-    <div class="gallery-item">
-        <span class="gallery-tag">Green Day</span>
-        <img src="assets/images/imgloyola/events/greenday.jpeg" alt="Green Day">
-    </div>
-
-    <div class="gallery-item">
-        <span class="gallery-tag">Independence Day</span>
-        <img src="assets/images/imgloyola/events/independenceday.jpeg" alt="Independence Day">
-    </div>
-
-    <div class="gallery-item">
-        <span class="gallery-tag">Plantation Drive</span>
-        <img src="assets/images/imgloyola/events/plantingday.jpeg" alt="Plantation Drive">
-    </div>
-
-    <div class="gallery-item">
-        <span class="gallery-tag">Sports</span>
-        <img src="assets/images/imgloyola/extra/sports.png" alt="Sports">
-    </div>
-
-</div>
-</section>
-
- <div class="featured-video-section">
-        
-    <div class="featured-video">
-        <video
-            autoplay
-            muted
-            loop
-            playsinline
-            controls
-            poster="assets/images/imgloyola/banner/banner2.png">
-
-            <source src="assets/images/imgloyola/infra/WhatsApp Video 2026-07-12 at 9.18.10 AM.mp4" type="video/mp4">
-
-        </video>
-    </div>
-    <div class="video-content">
-        <h2 style="text-align: center;">Experience Loyola International Public School</h2>
-        <p>
-            Discover a vibrant learning environment where academic excellence,
-            innovation, discipline, and values come together to shape future leaders.
-            Watch our campus and student life in action.
-        </p>
-    </div>
-
-</div>
-
-<!-- ===========================
-     Gallery Section End
-============================ -->
-
-
+    
 
    
 <!--==================================================
